@@ -24,4 +24,5 @@ public interface Seracher<T> {
 	 */
 	public Solution<T> search(Searchable<T> s);
 	
+	public void setIsDone (boolean isDone);
 }
