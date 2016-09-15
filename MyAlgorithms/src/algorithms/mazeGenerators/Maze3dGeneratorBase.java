@@ -25,7 +25,7 @@ public abstract class Maze3dGeneratorBase implements Maze3dGenerator{
 		return isDone;
 	}
 	
-	/* (non-Javadoc)
+	/* 
 	 * @see algorithms.mazeGenerators.Maze3dGenerator#setIsDone(boolean)
 	 */
 	public void setIsDone (boolean isDone) {
