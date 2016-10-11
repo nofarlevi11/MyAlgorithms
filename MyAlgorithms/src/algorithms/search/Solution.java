@@ -1,6 +1,7 @@
 package algorithms.search;
 
 import java.util.List;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 // TODO: Auto-generated Javadoc
@@ -11,7 +12,7 @@ import java.util.ArrayList;
  * @param <T> is a parameter which has to be injection specific according to the kind of State of our problem
  * @since August 2016
  */
-public class Solution<T> {
+public class Solution<T> implements Serializable{
 	
 	/** The states. */
 	private List<State<T>> states = new ArrayList<State<T>>();

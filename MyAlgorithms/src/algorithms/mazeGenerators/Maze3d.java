@@ -1,5 +1,6 @@
 package algorithms.mazeGenerators;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 // TODO: Auto-generated Javadoc
@@ -11,7 +12,7 @@ import java.util.ArrayList;
  * @author NofarLevi
  * @since August 2016
  */
-public class Maze3d {
+public class Maze3d implements Serializable {
 
 	/** The maze. */
 	private int [][][] maze;
@@ -407,11 +408,11 @@ public class Maze3d {
 	public int [][] getCrossSectionByZ(int z) throws IndexOutOfBoundsException {
 		if (z >=0 && z<=getFloors()){
 
-			int [][] maze2d = new int [getCols()][getRows()];
+			int [][] maze2d = new int [getRows()][getCols()];
 		
-			for (int x = 0; x<getCols();x++)
-				for (int y = 0;y<getRows();y++)
-					maze2d[x][y] = maze[x][y][z];
+			for (int y = 0; y<getRows();y++)
+				for (int x = 0;x<getCols();x++)
+					maze2d[y][x] = maze[z][y][x];
 		
 			return maze2d;
 		}

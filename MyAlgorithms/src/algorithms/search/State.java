@@ -1,4 +1,7 @@
 package algorithms.search;
+
+import java.io.Serializable;
+
 // TODO: Auto-generated Javadoc
 
 /**
@@ -10,7 +13,7 @@ package algorithms.search;
  * @param <T> the generic type of the State
  * @since August 2016
  */
-public class State<T> implements Comparable<State<T>> {
+public class State<T> implements Comparable<State<T>>, Serializable {
 	
 	/** The came from. */
 	private State<T> cameFrom;

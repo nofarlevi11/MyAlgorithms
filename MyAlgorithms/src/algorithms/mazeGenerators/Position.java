@@ -1,5 +1,7 @@
 package algorithms.mazeGenerators;
 
+import java.io.Serializable;
+
 // TODO: Auto-generated Javadoc
 /**
  * Position:
@@ -9,7 +11,7 @@ package algorithms.mazeGenerators;
  * @author NofarLevi
  *@since August 2016
  */
-public class Position {
+public class Position implements Serializable{
 
 	/** The x. */
 	public int x;
