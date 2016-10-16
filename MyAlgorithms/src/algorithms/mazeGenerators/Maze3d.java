@@ -44,9 +44,18 @@ public class Maze3d implements Serializable {
 		this.rows=rows;
 		this.cols=cols;
 		maze = new int [floors][rows][cols];
-		
 	}
 	
+	public Maze3d(int[][][] maze, int floors, int rows, int cols, Position startPosition, Position goalPosition) {
+		super();
+		this.maze = maze;
+		this.floors = floors;
+		this.rows = rows;
+		this.cols = cols;
+		this.startPosition = startPosition;
+		this.goalPosition = goalPosition;
+	}
+
 	/** The Constant FREE. */
 	public static final int FREE = 0;
 	
