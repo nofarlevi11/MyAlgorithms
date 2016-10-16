@@ -36,9 +36,9 @@ public class MyDecompressorInputStream extends InputStream{
 			if(arr.length <= k){
 				break;
 			}
-			num = (byte)in.read();
-			counter = (byte)in.read();
 			
+			counter = (byte)in.read();
+			num = (byte)in.read();
 			for(int j = 0 ; j < counter ; j++){
 				if(arr.length <= k){
 					break;
